@@ -56,7 +56,7 @@ vue create vue-next-project
 
 这里在输入命令后，需要选择`Manually select features`, 至少要把 `babel` `typescript` `router` 选上，（`vuex` 看自身情况是否需要）。如下图:
 
-![](https://github.com/vue3/vue3/vue3-router4-typescript/raw/master/assets/vue create project.png)
+![](https://github.com/vue3/vue3/vue3-router4-typescript/raw/master/assets/vue-create-project.png)
 
 不清楚 vue-cli 的可参考[文章](https://juejin.im/post/5e69de93f265da570c75453e)
 
