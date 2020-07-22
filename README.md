@@ -56,11 +56,13 @@ vue create vue-next-project
 
 这里在输入命令后，需要选择`Manually select features`, 至少要把 `babel` `typescript` `router` 选上，（`vuex` 看自身情况是否需要）。如下图:
 
-![](https://user-gold-cdn.xitu.io/2020/5/22/1723b9c80913e36d?w=566&h=237&f=png&s=9590)
+![](https://github.com/vue3/vue3/vue3-router4-typescript/raw/master/assets/vue create project.png)
 
 不清楚 vue-cli 的可参考[文章](https://juejin.im/post/5e69de93f265da570c75453e)
 
 #### 3、升级为 vue3.x 项目
+
+https://github.com/vuejs/vue-cli-plugin-vue-next
 
 ```
 cd vue-next-project
@@ -72,8 +74,6 @@ vue add vue-next
 完成以上三步主体环境算搭建完成，看刚才创建的目录里多了个 tsconfig.json 配置文件，可以根据自身与项目需要，进行配置。
 
 接下来需要简单处理一下，使其支持 typescript 形式。（模板 cli 还没完善 typescript 的模板代码）
-
-![](https://user-gold-cdn.xitu.io/2020/5/22/1723bb003f8fc297?w=965&h=520&f=png&s=30033)
 
 - 将`shims-vue.d.ts`文件中的内容修改一下，这步操作应该会少了一些报错。
 
@@ -136,7 +136,18 @@ export default defineComponent({
 ```
 
 生命周期对应
-![](https://user-gold-cdn.xitu.io/2020/5/22/1723bc18105dcd9f?w=488&h=319&f=png&s=15352)
+
+与 2.x 版本生命周期相对应的组合式 API  
+
+beforeCreate → 使用 setup()  
+created → 使用 setup()  
+beforeMount → onBeforeMount  
+mounted → onMounted  
+beforeUpdate → onBeforeUpdate  
+updated → onUpdated  
+beforeDestroy → onBeforeUnmount  
+destroyed → onUnmounted  
+errorCaptured → onErrorCaptured  
 
 ### 四、附上学习 vue-next 与 typescript 的官方秘籍
 
