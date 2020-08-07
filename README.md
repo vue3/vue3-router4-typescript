@@ -18,7 +18,6 @@ vue3.x 结合 typescript 初体验
 
 vue3.x 采用 Function-based API 形式组织代码，使其更容易压缩代码且压缩效率也更高,由于 修改了组件的声明方式，以函数组合的方式完成逻辑，天然与 typescript 结合。（vue2.x 中的组件是通过声明的方式传入一系列 options 的，所以在 2.x 下使用 typeScript 需要装饰器的方式`vue-class-component`才行）
 
-
 ```
   // vue2.x 要想使用ts 需要这样处理,详见官方文档 https://cn.vuejs.org/v2/guide/typescript.html
 <script lang="ts">
@@ -137,7 +136,7 @@ export default defineComponent({
 
 生命周期对应
 
-与 2.x 版本生命周期相对应的组合式 API  
+与 2.x 版本生命周期相对应的组合式 API
 
 beforeCreate → 使用 setup()  
 created → 使用 setup()  
@@ -147,7 +146,7 @@ beforeUpdate → onBeforeUpdate
 updated → onUpdated  
 beforeDestroy → onBeforeUnmount  
 destroyed → onUnmounted  
-errorCaptured → onErrorCaptured  
+errorCaptured → onErrorCaptured
 
 ### 四、附上学习 vue-next 与 typescript 的官方秘籍
 
